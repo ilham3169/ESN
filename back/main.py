@@ -42,7 +42,7 @@ def sending_message(driver, phone_number, message):
         msg_box = driver.find_element(By.XPATH, "//div[@data-tab='10']")
         msg_box.send_keys(Keys.ENTER)
         print(f"{GREEN}Message sent successfully{RESET}")
-        time.sleep(7)
+        time.sleep(10)
         print(f"{YELLOW}Waiting to avoid spam detection{RESET}")
     except Exception as e:
         print(f"{RED}Error sending message: {e}{RESET}")
